@@ -1,0 +1,23 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#development") Development
+    li: a(href="#articles") Articles
+    li: a(href="#resume") Resume
+    li: a(href="#contact") Contact
+
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo TM
+    
+    nav.site-nav
+      +nav-content()
+      
+      
+    a(href="mailto:twm013@bucknell.edu").email-link +email me
+      
+    .mobile-nav-toggle: span

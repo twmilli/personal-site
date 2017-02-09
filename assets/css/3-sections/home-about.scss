@@ -1,0 +1,33 @@
+section.about{
+  background:
+    url(../images/about-bg.jpg)
+    center
+    top;
+  background-size: cover;
+
+  h2{
+    color: rgb(46, 45, 45);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 0;
+    margin-left: -108px;
+  }
+
+  .home-lead{
+    padding-bottom: 180px;
+  }
+  p{
+    color: rgb(46, 45, 45);
+  }
+}
+
+@media(max-width: 640px){
+  section.about{
+    h2, .home-lead{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
+  }
+}
