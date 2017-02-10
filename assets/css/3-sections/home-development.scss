@@ -1,0 +1,30 @@
+section.development{
+  background: url(../images/dev-bg.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  .home-cta{
+    margin-top: 50px;
+    color: black;
+  }
+
+  .video-strip{
+    position: absolute;
+    top: 0;
+    height: calc(100% + 100px);
+    margin: -42px 0;
+    width: 100%;
+    height: 120%;
+    background: url(../images/video-strip.png) repeat-y;
+    background-position: center 0px;
+    background-size: 70%;
+  }
+
+  .col-1{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+  }
+}

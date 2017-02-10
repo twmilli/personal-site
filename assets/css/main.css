@@ -503,6 +503,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.home-cta {
+  font-size: 28px;
+  display: block;
+  background-color: white;
+  text-align: center;
+  padding: 0.4em 0;
+  line-height: 1.25;
+  box-shadow: 0px 3px 10px rgba(220, 220, 220, 0.2);
+  transition: all 0.15s ease-in-out; }
+  .home-cta:hover {
+    box-shadow: 0px 5px 14px rgba(220, 220, 220, 0.4); }
+
 .home-wrap header {
   width: 120px;
   background: white;
@@ -638,6 +650,30 @@ section.about {
     margin-right: auto;
     max-width: 300px; } }
 
+section.development {
+  background: url(../images/dev-bg.png);
+  background-size: cover;
+  background-position: center;
+  color: white; }
+  section.development .home-cta {
+    margin-top: 50px;
+    color: black; }
+  section.development .video-strip {
+    position: absolute;
+    top: 0;
+    height: calc(100% + 100px);
+    margin: -42px 0;
+    width: 100%;
+    height: 120%;
+    background: url(../images/video-strip.png) repeat-y;
+    background-position: center 0px;
+    background-size: 70%; }
+  section.development .col-1 {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 0px; }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -695,3 +731,8 @@ section.about {
 .home-lead {
   font-size: 36px;
   line-height: 1; }
+  .home-lead.outdented {
+    text-indent: -0.75em; }
+    @media (max-width: 640px) {
+      .home-lead.outdented {
+        text-indent: 0; } }
